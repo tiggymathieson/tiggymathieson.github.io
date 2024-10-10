@@ -4,24 +4,371 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="Mystyles" href="mystyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
-.container-fluid {
-    color: #f50b0b;
-    padding: 60px 50px;
+html {
+  scroll-behavior: smooth;
 }
-.bg-grey {
-    background-color: #f6f6f6;
-    }
+.jumbotron {
+    margin: 0px;
+    color: white;
+    background-color: rgb(22, 15, 81);
+    background-size: 100% 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container-large {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(22, 15, 81);
+    color: white;
+    padding: 200px 200px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.navbar {
+    color: rgb(22, 15, 81);
+    margin-bottom: 0%;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 20px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 20px;
+}
+.container-fluid{
+    background-color: white;
+    padding: 60px 60px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: rgb(22, 15, 81) !important;
+}
+.navbar-nav li a:hover{
+  color: white !important;
+  background-color:  rgb(22, 15, 81) !important;
+}
+.navbar-nav li.active{
+    background-color: rgba(22, 15, 81, 0.562) !important;
+}
+
+.container-fluid {
+    color:rgb(22, 15, 81);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+ .bg-bl {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(22, 15, 81);
+    color: white;
+}
+.btn-primary {
+    background-color:rgb(22, 15, 81);
+    outline-color:rgb(22, 15, 81);
+    border-color: rgb(22, 15, 81);
+}
+.btn-primary:hover {
+    background-color: gold;
+    outline-color: gold;
+    border-color: gold;
+}
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.person:hover {
+  border-color: rgba(22, 15, 81, 0.442) !important;
+}
+footer {
+  background-color:rgb(22, 15, 81);
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: gold;
+  text-decoration: none;
+}
+.panel{
+    background-color:white;
+    color:rgb(22, 15, 81);
+    border-bottom: 0;
+    font-size: large;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top:0px;
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+  transition: box-shadow 0.5s;
+}
+.thumbnail:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+
 </style>
 
-<body>
-    <div class="container-fluid text-center">
-        <h1> Votex products </h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#HOME">Vortex.com</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#ABOUTUS">ABOUT US</a></li>
+                    <li><a href="#ORDER">ORDER</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+
+    <div id="HOME" class="jumbotron">
+        <div class="container-large text-center">
+        <h1>Vortex Technology</h1>
+        <h3 style="font-size: 25px;">Providing Premium Buissness Compuer Consulting At Resonable Prices</h3>
+        </br>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="email" class="form-control"  size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </form>
+       </div>
     </div>
-    <div class="container-fluid text-center bg-grey ">
-        <h1> Votex products </h1>
+
+    <div id="ABOUTUS" class="container-fluid text-center" >
+        <h2>About Us</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3> Our Mission </h3>
+                <h4> We aim to provide quality, affordable services to local buissnesses. To cultivate the growth of
+                    the local economy, we our mission is to bring coperate level software and consulting to growing 
+                    buissnesses. 
+                </h4>
+            </div>
+            <div class="col-sm-4">
+                <h3> About Us </h3>
+                <h4> Founded in 2004, by Lauren Weinstein, we have experienced and evolved alongside the growth of the
+                    internet. Making us most qualified to help you adapt to the new wave of the internet. Starting as 
+                    a team of 1 we have grown exponensially to a tema of 3 eager experts, ready to handle your needs.
+                </h4>
+            </div>
+            <div class="col-sm-4">
+                <h3> Our Values </h3>
+                <h4> We Pride ourselves in providing to customers with incomparable services and each of our team 
+                    members are kean to create woderful customer experirience. We always create an open and honest
+                    atmosphere with clients. 
+                </h4>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h2>Meet The Team</h2>
+        <div class="panel-group" id="accordion">
+            <div class="panel well well-lg">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><strong>LAURREN WEINSTEIN</strong></a>
+                </h3>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="lauren.jpg" class="person img-circle"  alt="Motorcyclist stud">
+                    </a>
+                    <p>Founder and Team Leader</p>
+                    <p>PHD in providing buissness computing consulting</p> 
+                </div>
+              </div>
+            </div>
+            <div class="panel well well-lg">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><strong>DANNY DEVITO</strong></a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <a href="#demo2" data-toggle="collapse">
+                        <img style="object-position: 100% 0%;"  src="danny.jpg" class="person img-circle" alt="THE MOST AWESOME GUY EVER">
+                    </a>
+                    <p>Joined in 2014</p>
+                    <p>Actor</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel well well-lg">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><strong>TIGGY MATHIESON</strong> </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <a href="#demo3" data-toggle="collapse">
+                        <img style="object-position: 100% 20%;"  src="Tiggy.jpg" class="person img-circle" alt="SMARTEST PERSON TO EVER LIVE">
+                    </a>
+                    <p>Maker of this Website</p>
+                    <p>Joined in 2024</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div> 
+    <div id="ORDER" class="container-fluid bg-bl text-center">
+        <div class="container-fluid text-center">
+            <h2>Purchase Now</h2>
+                    <div class="thumbnail">
+                        <img src="Consultation.jpg" alt="Photo of Consultation">
+                        <p>Purchase a consultation today, With a very special offer of only £40 per hour.</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Purchase Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+        <div class="container-large text-center" id="CONTACT" style="font-size: large;">
+            <h2>Or Contact us Before</h2>
+                <p class="text-center"><em>Send us an email to Figure out the next steps</em></p>
+                <div class="row test">
+                    <div class="col-md-4">
+                        <p>Drop a note.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>Woodland Hills, California, US</p>
+                        <p><span class="glyphicon glyphicon-phone"></span>Phone: (818) 250 2800</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>Email: vortex@gmail.com</p>
+                    </div>
+                     <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><span class="glyphicon glyphicon-lock"></span>Consultation</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> £40 per hour</label>
+                        <input type="number" class="form-control" id="psw" placeholder="How long?">
+                    </div>
+                    <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-block">Pay
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <p>Need <a href="#HELP">help?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <a class="up-arrow" href="#HOME" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Website Made By Tiggy Mathieson</p>
+</footer>
+
 </body>
+<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#HOME']").on('click', function(event) {
+    
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+    
+        // Prevent default anchor click behavior
+        event.preventDefault();
+    
+        // Store hash
+        var hash = this.hash;
+    
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+    
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+    </script>
+</html>
